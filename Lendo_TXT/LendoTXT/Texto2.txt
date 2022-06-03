@@ -1,0 +1,123 @@
+Como gravar em um arquivo de texto (Guia de Programação em C#)
+Artigo
+10/05/2022
+2 minutos para o fim da leitura
+14 colaboradores
+
+
+Neste artigo, há vários exemplos mostrando várias maneiras de escrever texto em um arquivo. Os dois primeiros exemplos usam métodos de conveniência estáticos na System.IO.File classe para gravar cada elemento de qualquer IEnumerable<string> e um string em um arquivo de texto. O terceiro exemplo mostra como adicionar texto a um arquivo quando você precisa processar cada linha individualmente enquanto escreve no arquivo. Nos três primeiros exemplos, você substitui todo o conteúdo existente no arquivo. O exemplo final mostra como acrescentar texto a um arquivo existente.
+
+Todos esses exemplos gravam literais de cadeia de caracteres em arquivos. Se você quiser formatar o texto gravado em um arquivo, use o método Format ou o recurso de interpolação de cadeia de caracteres do C#.
+
+Gravar uma coleção de cadeias de caracteres em um arquivo
+C#
+
+Copiar
+class WriteAllLines
+{
+    public static async Task ExampleAsync()
+    {
+        string[] lines =
+        {
+            "First line", "Second line", "Third line" 
+        };
+
+        await File.WriteAllLinesAsync("WriteLines.txt", lines);
+    }
+}
+O exemplo de código-fonte anterior:
+
+Cria uma matriz de cadeia de caracteres com três valores.
+
+Aguarda uma chamada para a File.WriteAllLinesAsync qual:
+
+Cria de forma assíncrona um nome de arquivo WriteLines.txt. Se o arquivo já existir, ele será substituído.
+Grava as linhas fornecidas no arquivo.
+Fecha o arquivo, liberando e descartando automaticamente conforme necessário.
+Gravar uma cadeia de caracteres em um arquivo
+C#
+
+Copiar
+class WriteAllText
+{
+    public static async Task ExampleAsync()
+    {
+        string text =
+            "A class is the most powerful data type in C#. Like a structure, " +
+            "a class defines the data and behavior of the data type. ";
+
+        await File.WriteAllTextAsync("WriteText.txt", text);
+    }
+}
+O exemplo de código-fonte anterior:
+
+Cria uma instância de uma cadeia de caracteres dado o literal de cadeia de caracteres atribuído.
+
+Aguarda uma chamada para a File.WriteAllTextAsync qual:
+
+Cria de forma assíncrona um nome de arquivo WriteText.txt. Se o arquivo já existir, ele será substituído.
+Grava o texto especificado no arquivo.
+Fecha o arquivo, liberando e descartando automaticamente conforme necessário.
+Gravar cadeias de caracteres selecionadas de uma matriz em um arquivo
+C#
+
+Copiar
+class StreamWriterOne
+{
+    public static async Task ExampleAsync()
+    {
+        string[] lines = { "First line", "Second line", "Third line" };
+        using StreamWriter file = new("WriteLines2.txt");
+
+        foreach (string line in lines)
+        {
+            if (!line.Contains("Second"))
+            {
+                await file.WriteLineAsync(line);
+            }
+        }
+    }
+}
+O exemplo de código-fonte anterior:
+
+Cria uma matriz de cadeia de caracteres com três valores.
+Cria uma StreamWriter instância com um caminho de arquivo de WriteLines2.txt como uma declaração de uso.
+Itera em todas as linhas.
+Aguarda condicionalmente uma chamada, StreamWriter.WriteLineAsync(String)que grava a linha no arquivo quando a linha não contém "Second".
+Acrescentar texto a um arquivo existente
+C#
+
+Copiar
+class StreamWriterTwo
+{
+    public static async Task ExampleAsync()
+    {
+        using StreamWriter file = new("WriteLines2.txt", append: true);
+        await file.WriteLineAsync("Fourth line");
+    }
+}
+O exemplo de código-fonte anterior:
+
+Cria uma matriz de cadeia de caracteres com três valores.
+Cria uma StreamWriter instância com um caminho de arquivo de WriteLines2.txt como uma declaração de uso, passando true para acrescentar.
+Aguarda uma chamada para StreamWriter.WriteLineAsync(String), que grava a cadeia de caracteres no arquivo como uma linha acrescentada.
+Exceções
+As seguintes condições podem causar uma exceção:
+
+InvalidOperationException: o arquivo existe e é somente leitura.
+PathTooLongException: o nome do caminho pode ser muito longo.
+IOException: o disco pode estar cheio.
+Há condições adicionais que podem causar exceções ao trabalhar com o sistema de arquivos, é melhor programar defensivamente.
+
+Confira também
+Guia de Programação em C#
+Sistema de arquivos e o Registro (Guia de Programação em C#)
+Conteúdo recomendado
+Como ler de um arquivo de texto – guia de programação C#
+Saiba como ler de um arquivo de texto usando métodos estáticos da classe File. Consulte um exemplo de código e exiba recursos adicionais disponíveis.
+Como ler um arquivo de texto de uma linha por vez – guia de programação em C#
+Saiba como ler um arquivo de texto uma linha por vez. Consulte um exemplo de código e exiba recursos adicionais disponíveis.
+File.AppendText(String) Método (System.IO)
+Cria um StreamWriter que acrescenta um texto codificado para UTF-8 a um arquivo existente ou a um novo arquivo, se o arquivo especificado não existe.
+Como criar um arquivo ou pasta – Guia de Programação em C#
+Saiba como criar um arquivo ou pasta programaticamente. Você pode criar uma pasta, uma subpasta, um arquivo na subpasta e gravar dados nesse arquivo.

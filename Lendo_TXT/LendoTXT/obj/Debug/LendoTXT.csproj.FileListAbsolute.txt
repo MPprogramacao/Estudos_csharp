@@ -1,0 +1,10 @@
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\bin\Debug\LendoTXT.exe.config
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\bin\Debug\LendoTXT.exe
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\bin\Debug\LendoTXT.pdb
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\obj\Debug\LendoTXT.csprojAssemblyReference.cache
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\obj\Debug\LendoTXT.Form1.resources
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\obj\Debug\LendoTXT.Properties.Resources.resources
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\obj\Debug\LendoTXT.csproj.GenerateResource.cache
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\obj\Debug\LendoTXT.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\obj\Debug\LendoTXT.exe
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Lendo_TXT\LendoTXT\obj\Debug\LendoTXT.pdb
