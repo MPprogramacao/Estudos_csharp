@@ -1,0 +1,10 @@
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\bin\Debug\Grafico_Chart.exe.config
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\bin\Debug\Grafico_Chart.exe
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\bin\Debug\Grafico_Chart.pdb
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\obj\Debug\Grafico_Chart.csprojAssemblyReference.cache
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\obj\Debug\Grafico_Chart.Form1.resources
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\obj\Debug\Grafico_Chart.Properties.Resources.resources
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\obj\Debug\Grafico_Chart.csproj.GenerateResource.cache
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\obj\Debug\Grafico_Chart.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\obj\Debug\Grafico_Chart.exe
+C:\Users\Matheus\Desktop\Estudos\Estudos_csharp\Grafico\Grafico_Chart\obj\Debug\Grafico_Chart.pdb
